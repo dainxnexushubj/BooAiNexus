@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boo | AI Companion</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <main class="app">
+
+        <header class="topbar">
+            <div class="brand">
+                <div class="boo-icon">🐻</div>
+                <div>
+                    <h1>Boo</h1>
+                    <p>Your AI companion</p>
+                </div>
+            </div>
+
+            <div class="status">
+                <span class="status-dot"></span>
+                <span>Online</span>
+            </div>
+        </header>
+
+        <section class="chat-container">
+
+            <div id="chatMessages" class="chat-messages">
+                <div class="message boo-message">
+                    <div class="avatar">🐻</div>
+                    <div class="bubble">
+                        <p>Hey! I'm Boo. I'm here whenever you need someone to talk to.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="typing-indicator" id="typingIndicator">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span>Boo is thinking...</span>
+            </div>
+
+            <form id="chatForm" class="chat-input-area">
+                <input
+                    type="text"
+                    id="messageInput"
+                    placeholder="Talk to Boo..."
+                    autocomplete="off"
+                    maxlength="2000"
+                >
+
+                <button type="submit" id="sendButton">
+                    Send
+                </button>
+            </form>
+
+        </section>
+
+        <footer class="footer">
+            <span>Boo AI</span>
+            <span>•</span>
+            <span>Private companion space</span>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
